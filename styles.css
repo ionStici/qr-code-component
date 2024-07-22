@@ -21,45 +21,49 @@ body {
   background-color: hsl(212, 45%, 89%);
 }
 
-.main {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 2.8rem;
 }
 
 .card {
-  width: 32rem;
-  padding: 1.5rem;
+  max-width: 32rem;
+  padding: 1.6rem;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   text-align: center;
   box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
 }
 
-.card__img {
+.card__img-box {
   width: 100%;
   height: 28.8rem;
-  background-image: url(./images/image-qr-code.png);
-  background-size: cover;
-  background-position: center;
+}
+
+.card__img-box img {
+  width: 100%;
+  height: 100%;
   border-radius: 1rem;
+  object-fit: cover;
 }
 
 .card__text {
-  margin: 2.2rem 0;
+  margin: 2.4rem 0;
 }
 
 .card__heading {
   font-size: 2.2rem;
   font-weight: 700;
-  margin-bottom: 2rem;
   color: #1f314f;
+  margin-bottom: 1.6rem;
 }
 
 .card__paragraph {
-  margin: 0 2rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #7d889e;
+  margin: 0 1.6rem;
 }
